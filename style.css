@@ -16,6 +16,7 @@ html {
   font-size: 10px;
   font-family: 'Maven Pro', sans-serif;
   scroll-behavior: smooth;
+  
 }
 
 a {
@@ -1084,50 +1085,87 @@ form {
 }
 
 /* End  Media Query For Desktop */
-
-/* Loader */
-
-.lds-facebook {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-facebook div {
-  display: inline-block;
-  position: absolute;
-  left: 8px;
-  width: 16px;
-  background: #fff;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-}
-.lds-facebook div:nth-child(1) {
-  left: 8px;
-  animation-delay: -0.24s;
-}
-.lds-facebook div:nth-child(2) {
-  left: 32px;
-  animation-delay: -0.12s;
-}
-.lds-facebook div:nth-child(3) {
-  left: 56px;
-  animation-delay: 0;
-}
-@keyframes lds-facebook {
-  0% {
-    top: 8px;
-    height: 64px;
-  }
-  50%, 100% {
-    top: 24px;
-    height: 32px;
-  }
-}
-
-#preloader {
-  background: #fff url(./img/preloader.gif) no-repeat center center;
-  height: 100vh;
-  width: 100%;
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
   position: fixed;
-  z-index: 100;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background:#1b1b1b;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader{
+  width:100%;
+  height:100vh;
+  background:#101010;
+  overflow:hidden;
+  position:fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* PRELOADER */
+
+
+@keyframes drop-in {
+  from {
+    transform:
+      rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform:
+      rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+
+.box {
+  animation: drop-in 500ms;
+}
+
+.box1 {
+  animation: drop-in 1000ms;
+}
+
+.box2 {
+  animation: drop-in 1500ms;
+}
+
+.box3 {
+  animation: drop-in 2000ms;
 }
