@@ -8,10 +8,6 @@
   <meta name="description" content="">
   <title>Crystal Enterprises</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="pace.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <link rel="icon" type="image/x-icon" href="./img/logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
   integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
@@ -20,10 +16,6 @@
 </head>
 
 <body>
-
-  <div id="preloader">
-    <div class="p">LOADING</div>
-</div>
 
   <!-- Header -->
   <section id="header">
@@ -99,19 +91,6 @@
     </div>
   </section>
   <!-- End Service Section -->
-
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/m1nYWZ-c1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 
   <!-- Projects Section -->
@@ -364,29 +343,6 @@
     </div>
   </section>
   <!-- End Footer -->
-
-
-<script>
-
-paceOptions = {
-ajax: true,
-document: true,
-eventLag: false
-};
-
-Pace.on('done', function() {
-$('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
-
-
-$('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
-
-TweenMax.from(".title", 2, {
-     delay: 1.8,
-          y: 10,
-          opacity: 0,
-          ease: Expo.easeInOut
-    })
-});
 
 </script>
 
